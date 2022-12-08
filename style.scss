@@ -1,0 +1,601 @@
+$breakpoint-alpha: 480px;
+
+ 
+  body { 
+    margin:auto;
+    background: rgba(29, 45, 44, 0.1);
+  }
+
+  p{
+    a:link, a:visited{
+      text-decoration: none;
+      color: #BFA37B;
+  
+    }
+    a:hover{
+      color: #d4502c;
+    }
+  }
+  
+  header {
+    width: 100%;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 10px;
+
+  
+    h1{
+      width: 70%;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(177, 181, 187, 0.5);
+  }
+  
+  h2 {
+      width: 100%;
+      margin: 0;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      font-size: 15px;
+      transform: translate(-50%, -50%);
+      background: rgba(177, 181, 187, 0.8);
+      color: #d4502c;
+  }
+  
+    &::after{
+      content: "";
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background: url(https://images.pexels.com/photos/910307/pexels-photo-910307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-size: cover;
+      transform-origin: center center 0;
+      transform: translateZ(-1px) scale(1);
+      z-index: -1;
+      min-height: 75vh;
+  }
+
+  }
+
+  .summary{
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+   
+    p{
+      background: rgba(177, 181, 187, 0.8);
+    }
+
+    p:first-of-type{
+      position: absolute;
+      padding: 5%;
+    }
+
+    p:last-of-type{
+      position: absolute;
+      transform: translate(10%, 700%);
+      
+      a{
+        color:#BFA37B;
+      }
+    }
+
+
+    &::after{
+      content: "";
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background: url(https://images.pexels.com/photos/258045/pexels-photo-258045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-size: cover;
+      transform-origin: center center 0;
+      transform: translateZ(-1px) scale(1);
+      z-index: -1;
+      min-height: 25vh;
+      margin: 0;
+      padding:0;
+  }
+ 
+  }
+
+  .preamble{
+    max-width: 100%;
+    padding-bottom: 9%;
+   
+    h3{
+      max-width: 80%;
+      padding: 5%;
+      text-align: left;
+      background: rgba(191, 163, 123, 0.6);
+      color: #d4502c;
+      font-family: 'Carter One', cursive;
+      box-shadow: 5px 0px 5px 5px rgba(177, 181, 187, 0.5);
+      border-radius: 5px;
+      
+    }
+
+    p{
+      padding-left:7%;
+      padding-right:7%;
+      font-family: 'Quicksand', sans-serif;
+      margin:0
+
+    }
+  }
+
+  .supporting{
+
+    
+    
+
+    h3{
+      max-width: 100%;
+      margin:0;
+      margin-left: 10%;
+      padding: 5%;
+      text-align: right;
+      background: rgba(191, 163, 123, 0.6);
+      color: #d4502c;
+      font-family: 'Carter One', cursive;
+      box-shadow: 5px 0px 5px 5px rgba(177, 181, 187, 0.5);
+      border-radius: 5px;
+    }
+    p{
+      padding-left:7%;
+      padding-right:7%;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .explanation{
+      padding-bottom: 7%;
+    }
+
+    .benefits{
+      padding-bottom: 7%;
+    }
+
+    .participation {
+      padding-bottom: 7%;
+      h3{
+        text-align: left;
+        max-width: 80%;
+        margin-left: 0;
+        padding: 5%;   
+      }
+    }
+
+    .requirements {
+      padding-bottom: 7%;
+      h3{
+        text-align: left;
+        max-width: 80%;
+        margin-left: 0;
+        padding: 5%;
+      }
+    }
+
+  }
+
+  .design-selection{
+    h3{
+      max-width: 100%;
+      padding: 3%;
+      text-align: center;
+      background:  
+      white;
+      color: #d4502c;
+      font-family: 'Carter One', cursive;
+    }
+
+    nav{
+      padding: 5%;
+      padding-top: 2%;
+  
+      ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5%;
+        list-style-type: none;
+        align-items: center;
+        margin-bottom:2%;
+        padding:1%;
+
+        a:first-of-type {
+          color: 
+          #4B7470;
+          text-decoration: none;   
+          display:block;  
+          font-size: 20px;
+        }
+
+        a:last-of-type {
+          color: 
+          #BFA37B;
+          text-decoration: none;   
+    
+        }
+
+      }
+    }
+  }
+  p{
+    a:link, a:visited{
+      text-decoration: none;
+      color: #BFA37B;
+    }
+  }
+
+  footer{
+    text-align: center;
+    font-size: 1.2em;
+    a:link, a:visited{
+      text-decoration: none;
+      color: #BFA37B;
+    }
+  }
+
+  .design-archives{
+    padding-bottom: 7%;
+
+    h3{
+      max-width: 100%;
+      padding: 3%;
+      text-align: center;
+      background:  
+      white;
+      color: #d4502c;
+      font-family: 'Carter One', cursive;
+    }
+
+    ul{
+
+      text-align: center;
+      padding:0;
+      margin:0;
+
+    li{
+
+      list-style-type: none;
+
+      a{
+        text-decoration: none;  
+        color: #4B7470;
+        align-items: center;
+        text-align: center;
+      }
+
+    }
+  }
+  }
+
+  .zen-resources{
+    padding-bottom: 7%;
+
+    h3{
+      max-width: 100%;
+      padding: 3%;
+      text-align: center;
+      background:  
+      white;
+      color: #d4502c;
+      font-family: 'Carter One', cursive;
+    }
+
+    ul{
+
+      text-align: center;
+      padding:0;
+      margin:0;
+
+
+      li{
+
+        list-style-type: none;
+
+        a{
+          text-decoration: none;  
+          color: #4B7470;
+        }
+
+      }
+    }
+
+       
+
+   
+  }
+
+
+
+  // LARGE VIEW
+  @media (min-width: $breakpoint-alpha) {
+  
+    html {
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    body { 
+      margin:0;
+      padding:0;
+      perspective: 1px;
+      transform-style: preserve-3d;
+      height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      font-family: Nunito;
+      perspective: 4px;
+      transform-style: preserve-3d;
+    }
+    
+    h1 {
+       font-size: 150%
+    }
+  
+    h3{
+      font-size: 110%;
+    }
+    
+    .supporting .participation, .supporting .requirements{
+      h3{
+        text-align: center;
+      }
+    }
+
+    .preamble, .supporting, .requirements, .participation, .benefits{
+      h3{
+        text-align: center;
+      }
+    }
+
+    p {
+      font-size: 110%;
+      line-height: 150%;
+      color: #333;
+    }
+  
+   
+// INTRO SECTION
+    header {
+      // position: absolute;
+  //   top: -30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'lato',sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 10px;
+      // width: 50%;
+      // padding: 5%;
+      // border-radius: 5px;
+    background: rgba(235, 165, 122, 0.226);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  
+  h1{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(100, 131, 177, 0.3);
+  }
+  
+  h2 {
+      margin: 0;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      font-size:50%;
+      transform: translate(-50%, -50%);
+      background: rgba(124, 145, 75, 0.3);
+  }
+  
+  &:after {
+  background: 50% 50% / cover;
+  }
+  
+  &::after{
+      content: "";
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background: url(https://free4kwallpapers.com/uploads/originals/2019/04/02/roadtrip-wallpaper.jpg);
+      background-size: cover;
+      transform-origin: center center 0;
+      transform: translateZ(-1px) scale(1);
+      z-index: -1;
+      min-height: 100vh;
+  }
+
+}
+
+  .summary {
+    display: block;
+    text-align: center;
+    p:first-of-type{
+      position: absolute;
+      padding: 2%;
+      left: 0%;
+      right: 0%;
+      bottom: -24%;
+      
+    }
+
+    p:last-of-type{
+      position: absolute;
+      // transform: translate(80%, 400%);
+      left: -12%;
+      right: 0%;
+      bottom: 4.1%;
+    }
+  }
+
+
+  
+  // SIDEBAR
+    .design-selection, .zen-resources, .design-archives{
+      position: relative;
+      // float: right;
+      padding: 2%;
+      width: 100%;
+      margin: 2%;
+      // box-sizing: border-box;
+      // box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+      transform-style: inherit;
+      li{
+        list-style: none;
+      }
+      a{
+        display: inline-block;
+        padding: .2em;
+        // font-size: 1.2em;
+      }
+      a:link, a:visited{
+        text-decoration: none;
+        color: #BFA37B;
+      }
+
+    }
+  
+    // .wrapper::after{
+    //   content: "";
+    //   position: relative;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   display: block;
+    //   background: url(https://free4kwallpapers.com/uploads/originals/2019/04/02/roadtrip-wallpaper.jpg);
+    //   opacity: 0.4;
+    //   background-size: cover;
+    //   transform-origin: center center 0;
+    //   transform: translateZ(-1px) scale(1);
+    //   z-index: -1;
+    //   min-height: 100vh;
+  
+    // }
+
+    .preamble{
+      max-width: 31%;
+      
+      // margin-bottom: -5%;
+    }
+
+    .design-selection nav ul{
+      grid-template-columns: auto;
+    }
+
+    .design-archives, .zen-resources{
+      ul>li{
+        padding: 2%;
+        text-align: left;
+        font-size: large;
+      }
+    }
+  
+    // The Full Page Grid in the right spaces
+  .page-wrapper{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.2em;
+  }
+  .intro{
+    display: block;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  #zen-supporting{
+    // display: block;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: -20%;
+    div{
+      // border: 1px solid red;
+      padding: 1.2em;
+    }
+  }
+  .wrapper{
+    grid-column: 2/3;
+    display: grid;
+    grid-auto-rows: 3fr 1fr 1fr;
+    gap: 1em;
+    margin-top: -300%;
+  }
+  .navigation{
+    display: flex;
+  }
+  
+  // body grid
+  
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // Tows are seperated too much
+    // It put a grid space between each
+    // grid-template-rows: 800px 800px 50px;
+    grid-template-rows: 30fr 50fr 1fr;
+    padding: 1.2em;
+  }
+  .explanation{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: -200%;
+    align-self: center;
+  }
+  .participation{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    // margin-bottom: -125%;
+    align-self: center;
+  }
+  .benefits{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: flex-end;
+    // margin-bottom: -40%;
+  }
+  .requirements{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    margin-bottom: -150%;
+  }
+  footer{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    // align-self: center;
+    justify-items: left;
+    // background-color: rgba(177, 181, 187, 1);
+
+  }
+
+  // aside{
+  //   transform: translate(0%, 15%);
+  // }
+
+  }
+  
+
+
+  
+
+
+
