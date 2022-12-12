@@ -265,96 +265,134 @@ footer a:link, footer a:visited {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    font-family: Nunito;
     perspective: 4px;
     transform-style: preserve-3d;
   }
   h1 {
-    font-size: 150%;
+    font-size: 1.2em;
   }
   h3 {
-    font-size: 110%;
-  }
-  .supporting .participation h3, .supporting .requirements h3 {
-    text-align: center;
-  }
-  .preamble h3, .supporting h3, .requirements h3, .participation h3, .benefits h3 {
-    text-align: center;
+    font-size: 1.5em;
   }
   p {
     font-size: 110%;
     line-height: 150%;
-    color: #333;
   }
-  header {
+  .intro header {
     left: 0;
     right: 0;
     text-align: center;
-    font-family: "lato", sans-serif;
     font-weight: 300;
     font-size: 50px;
     letter-spacing: 10px;
-    background: rgba(235, 165, 122, 0.226);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
   }
-  header h1 {
+  .intro header h1 {
     margin: 0;
+    padding: 1%;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(100, 131, 177, 0.3);
   }
-  header h2 {
+  .intro header h2 {
+    color: rgb(100, 131, 177);
     margin: 0;
+    padding: 1%;
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     font-size: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(124, 145, 75, 0.3);
   }
-  header:after {
-    background: 50% 50%/cover;
-  }
-  header::after {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    background: url(https://free4kwallpapers.com/uploads/originals/2019/04/02/roadtrip-wallpaper.jpg);
-    background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(1);
-    z-index: -1;
-    min-height: 100vh;
+  .intro .summary::after {
+    content: none;
+    background: rgba(100, 131, 177, 0.3);
   }
   .summary {
+    position: relative;
     display: block;
     text-align: center;
+    background: rgba(177, 181, 187, 0.8);
+    padding: 1%;
+  }
+  .summary p {
+    background: none;
   }
   .summary p:first-of-type {
-    position: absolute;
-    padding: 2%;
-    left: 0%;
-    right: 0%;
-    bottom: -24%;
+    position: relative;
+    padding: 0%;
   }
   .summary p:last-of-type {
-    position: absolute;
-    left: -12%;
-    right: 0%;
-    bottom: 4.1%;
+    position: relative;
+    transform: none;
+  }
+  .preamble {
+    padding-bottom: 5%;
+  }
+  .preamble h3 {
+    color: rgb(100, 131, 177);
+  }
+  .preamble p {
+    padding-left: 4%;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    max-width: 80%;
+  }
+  .supporting h3 {
+    color: rgb(100, 131, 177);
+  }
+  .supporting p {
+    padding-left: 15%;
+    padding-right: 0%;
+  }
+  .supporting .explanation {
+    padding-bottom: 3%;
+  }
+  .supporting .explanation p {
+    text-align: right;
+    padding-right: 4%;
+    max-width: 80%;
+  }
+  .supporting .participation {
+    padding-bottom: 3%;
+  }
+  .supporting .participation p {
+    padding-left: 4%;
+    max-width: 80%;
+  }
+  .supporting .benefits {
+    padding-bottom: 3%;
+  }
+  .supporting .benefits p {
+    text-align: right;
+    padding-right: 4%;
+    max-width: 80%;
+  }
+  .supporting .requirements {
+    padding-bottom: 3%;
+  }
+  .supporting .requirements p {
+    padding-left: 4%;
+    max-width: 80%;
+  }
+  .supporting footer {
+    padding: 1%;
+    font-size: 3em;
+  }
+  .supporting footer a {
+    padding: 1%;
   }
   .design-selection, .zen-resources, .design-archives {
     position: relative;
-    padding: 2%;
     width: 100%;
-    margin: 2%;
+    box-sizing: border-box;
     transform-style: inherit;
+    padding-bottom: 0%;
+  }
+  .design-selection h3, .zen-resources h3, .design-archives h3 {
+    color: rgb(100, 131, 177);
   }
   .design-selection li, .zen-resources li, .design-archives li {
     list-style: none;
@@ -367,21 +405,44 @@ footer a:link, footer a:visited {
     text-decoration: none;
     color: #BFA37B;
   }
-  .preamble {
-    max-width: 31%;
-  }
-  .design-selection nav ul {
-    grid-template-columns: auto;
-  }
   .design-archives ul > li, .zen-resources ul > li {
     padding: 2%;
     text-align: left;
     font-size: large;
   }
+  .design-selection nav {
+    padding-top: 0%;
+  }
+  .design-selection nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 10%;
+  }
+  .design-archives nav > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    font-size: 1.5em;
+  }
+  .design-archives nav > ul .next {
+    grid-column: 1/2;
+  }
+  .design-archives nav > ul .viewall {
+    grid-column: 2/3;
+  }
+  .zen-resources ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+  }
+}
+@media (min-width: 480px) and (min-width: 768px) {
   .page-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 1.2em;
   }
   .intro {
@@ -389,10 +450,13 @@ footer a:link, footer a:visited {
     grid-column: 1/3;
     grid-row: 1/2;
   }
+  .intro .preamble {
+    max-width: 70%;
+    padding-bottom: 0%;
+  }
   #zen-supporting {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-top: -20%;
   }
   #zen-supporting div {
     padding: 1.2em;
@@ -402,7 +466,6 @@ footer a:link, footer a:visited {
     display: grid;
     grid-auto-rows: 3fr 1fr 1fr;
     gap: 1em;
-    margin-top: -300%;
   }
   .navigation {
     display: flex;
@@ -410,30 +473,24 @@ footer a:link, footer a:visited {
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30fr 50fr 1fr;
+    grid-template-rows: auto auto auto;
     padding: 1.2em;
   }
   .explanation {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: -200%;
-    align-self: center;
   }
   .participation {
     grid-column: 2/3;
     grid-row: 2/3;
-    align-self: center;
   }
   .benefits {
     grid-column: 1/2;
     grid-row: 2/3;
-    align-self: flex-end;
   }
   .requirements {
     grid-column: 1/2;
     grid-row: 1/2;
-    align-self: center;
-    margin-bottom: -150%;
   }
   footer {
     grid-column: 1/3;
