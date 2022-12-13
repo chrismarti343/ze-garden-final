@@ -443,7 +443,6 @@ footer a:link, footer a:visited {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto;
-    gap: 1.2em;
   }
   .intro {
     display: block;
@@ -452,7 +451,7 @@ footer a:link, footer a:visited {
   }
   .intro .preamble {
     max-width: 70%;
-    padding-bottom: 0%;
+    padding-bottom: 3%;
   }
   #zen-supporting {
     grid-column: 1/2;
@@ -462,40 +461,68 @@ footer a:link, footer a:visited {
     padding: 1.2em;
   }
   .wrapper {
+    position: relative;
     grid-column: 2/3;
     display: grid;
-    grid-auto-rows: 3fr 1fr 1fr;
+    grid-auto-rows: auto auto auto;
     gap: 1em;
+    margin-top: -150%;
   }
   .navigation {
     display: flex;
   }
   .main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    padding: 1.2em;
+    grid-template-columns: auto;
   }
   .explanation {
-    grid-column: 2/3;
     grid-row: 1/2;
   }
   .participation {
-    grid-column: 2/3;
     grid-row: 2/3;
   }
   .benefits {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
   .requirements {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 4/5;
   }
   footer {
-    grid-column: 1/3;
-    grid-row: 3/4;
+    grid-row: 5/6;
     justify-items: left;
+  }
+  .design-selection > nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .design-selection > nav ul li {
+    padding: 1%;
+  }
+  .design-archives > nav {
+    padding: 5%;
+  }
+  .design-archives > nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .design-archives > nav ul li {
+    padding: 1%;
+  }
+  .zen-resources {
+    padding: 5%;
+  }
+  .zen-resources ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .zen-resources ul li {
+    padding: 1%;
   }
 }
 

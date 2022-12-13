@@ -543,6 +543,9 @@ $breakpoint-beta: 768px;
       padding: 1%;
     }
   }
+
+
+
   // LARGE VIEW
   @media (min-width: $breakpoint-beta) {
 
@@ -551,7 +554,7 @@ $breakpoint-beta: 768px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto;
-    gap: 1.2em;
+    // gap: 0%;
   }
   .intro{
     display: block;
@@ -559,7 +562,7 @@ $breakpoint-beta: 768px;
     grid-row: 1/2;
     .preamble{
       max-width: 70%;
-      padding-bottom: 0%;
+      padding-bottom: 3%;
     }
   }
   #zen-supporting{
@@ -570,60 +573,87 @@ $breakpoint-beta: 768px;
     }
   }
   .wrapper{
+    position: relative;
     grid-column: 2/3;
     display: grid;
-    grid-auto-rows: 3fr 1fr 1fr;
+    grid-auto-rows: auto auto auto;
     gap: 1em;
-    // margin-top: -300%;
+    margin-top: -150%;
   }
   .navigation{
     display: flex;
   }
   
   // body grid
-
-  
   .main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    padding: 1.2em;
+    grid-template-columns: auto;
+    // gap: 0%;
+    // grid-template-rows: auto auto auto;
+    // padding: 1.2em;
   }
   .explanation{
-    grid-column: 2/3;
+    // To the right
     grid-row: 1/2;
+    // text-align: right;
+    // padding-right: 4%;
+    // max-width: 80%;
+
   }
   .participation{
-    grid-column: 2/3;
     grid-row: 2/3;
-    // margin-bottom: -125%;
-    // align-self: center;
   }
   .benefits{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    // align-self: flex-end;
-    // margin-bottom: -40%;
+    grid-row: 3/4;
   }
   .requirements{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    // align-self: center;
-    // margin-bottom: -150%;
+    grid-row: 4/5;
   }
   footer{
-    grid-column: 1/3;
-    grid-row: 3/4;
-    // align-self: center;
+    grid-row: 5/6;
     justify-items: left;
     // background-color: rgba(177, 181, 187, 1);
 
   }
 
+// Side Bar grids
+  .design-selection > nav{
+    ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    li{
+      padding: 1%;
+    }
+    }
   }
-  
+  .design-archives > nav{
+    padding: 5%;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      li{
+        padding: 1%;
+      }
+    }
+  }
+  .zen-resources{
+    padding: 5%;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      li{
+        padding: 1%;
+      }
+    }
+  }
 
-
+  }
   }  
 
 
